@@ -22,7 +22,9 @@ if __name__ == '__main__':
     while True:
         word = input("Type quit to exit \n Enter What You Want Me To Speak: ")
         if word == 'quit':
-            text_to_speech.say('bye bye')
+            text_to_speech.say(word)
+            text_to_speech.runAndWait()
             break
         text_to_speech.say(word)
-    text_to_speech.runAndWait()
+        text_to_speech.runAndWait()
+        
